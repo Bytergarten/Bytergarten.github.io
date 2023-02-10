@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
 	font-family: 'Cascadia Code';
-	src: url('fonts/CascadiaCode.ttf');
+	src: url('../../fonts/CascadiaCode.ttf');
 }
 
 
@@ -9,20 +9,21 @@
 
 
 /*Tags*/
- * {
+* {
 	font-family: "Cascadia Code";
 	color: antiquewhite;
 
 }
 
 body {
-	background: linear-gradient(to bottom, rgba(0, 83, 159, 1), rgba(0, 83, 159, 0.8), rgba(0, 83, 159, 1));
+	background: linear-gradient(90deg, #00459f, #00659f);
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-body, html {
-	width: 100%;
+body,
+html {
+	/*width: 100%;*/
 	height: 100%;
 }
 
@@ -53,46 +54,53 @@ li {
 	text-align: center;
 	margin: 0 auto;
 }
-.left_mid { margin-left: 25%; }
-.right_mid { margin-right: 25%; }
+
+.left_mid {
+	margin-left: 25%;
+}
+
+.right_mid {
+	margin-right: 25%;
+}
 
 .shine {
 	padding: 10px;
 	display: table;
-	text-shadow: 0 0 30px wheat,0 0 50px wheat;
-	transition: 0.8s;
+	text-shadow: 0 0 30px wheat, 0 0 50px wheat;
+	transition: 0.7s;
 }
-.shine:hover { text-shadow: 0 0 5px wheat,0 0 10px wheat; }
+
+.shine:hover {
+	text-shadow: 0 0 0px wheat, 0 0 0px wheat;
+}
 
 .hover-a {
 	padding: 5px;
 	border-radius: 5px;
-	transition: 1.2s;
+	transition:border-radius 0.8s, color 0.5s, background 0.8s;
 	color: wheat;
 }
+
 .hover-a:hover {
 	border-radius: 20px 0px 20px 0px;
-	color: gray;
+	color: #1e1e1e;
 	background: rgba(255, 255, 255, 0.4);
 }
 
-.pointer:hover { cursor: pointer; }
-
-
-/*pseudo-elements*/
-::-webkit-scrollbar {
-	width: 20px;
-	height: 1px;
+.pointer:hover {
+	cursor: pointer;
 }
 
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 8px gray;
+::-webkit-scrollbar {
+	width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(to bottom, wheat, white);
+	border-radius: 5px;
+	/*-webkit-box-shadow: inset 0 0 5px gray;*/
+	background: linear-gradient(to bottom, #ff9500, #ff8500);
 }
 
-::-webkit-scrollbar-track {
-	background: black;
+::-webkit-scrollbar-track{
+	background: rgb(0, 83, 159, 0.5);
 }
